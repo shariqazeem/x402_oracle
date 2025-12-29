@@ -21,7 +21,10 @@ import * as path from 'path'
 // CONFIGURATION
 // =============================================================================
 
-const API_URL = process.env.API_URL || 'http://localhost:3000/api/reputation'
+// 🚀 LIVE DEPLOYMENT URL - Update this after Vercel deploy
+const LIVE_URL = 'https://x402-oracle.vercel.app'
+
+const API_URL = process.env.API_URL || `${LIVE_URL}/api/reputation`
 const PRICE = 0.05 // USDC
 const NETWORK = 'devnet'
 
